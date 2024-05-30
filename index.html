@@ -10,50 +10,70 @@
 	<body>
 		<!-- Sign-up form start -->
 		<div class="main-container" id="main_container">
-			<h1 class="heading-text">Stay updated!</h1>
-			<p class="paragraph-text">Join 60,000+ product managers receiving monthly updates on:</p>
+			<div class="left-column">
+				<h1 class="heading-text">Stay updated!</h1>
+				<p class="paragraph-text">
+					Join 60,000+ product managers receiving monthly updates on:
+				</p>
 
-			<div class="list-row">
-				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
-				<p class="list-text">Product discovery and building what matters</p>
+				<div class="list-row">
+					<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
+					<p class="list-text">Product discovery and building what matters</p>
+				</div>
+
+				<div class="list-row">
+					<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
+					<p class="list-text">Measuring to ensure updates are a success</p>
+				</div>
+
+				<div class="list-row">
+					<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
+					<p class="list-text">And much more!</p>
+				</div>
+
+				<form class="form-div">
+					<div class="label-row">
+						<label for="email" class="email-label">Email address</label>
+						<p class="error-text" id="error_text">Valid email required</p>
+					</div>
+					<input
+						type="email"
+						name="email"
+						placeholder="email@company.com"
+						class="email-input"
+						id="email_input"
+						required
+					/>
+					<button class="subscribe-button" id="subscribe_button" type="submit" onsubmit="">
+						Subscribe to monthly newsletter
+					</button>
+				</form>
 			</div>
-
-			<div class="list-row">
-				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
-				<p class="list-text">Measuring to ensure updates are a success</p>
+			<div class="right-column">
+				<img
+					src="./resources/images/illustration-sign-up-desktop.svg"
+					alt=""
+					srcset=""
+					class="illustration-desktop"
+				/>
 			</div>
-
-			<div class="list-row">
-				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
-				<p class="list-text">And much more!</p>
-			</div>
-
-			<label for="email" class="email-label">Email address</label>
-			<input
-				type="email"
-				name="email"
-				placeholder="email@company.com"
-				class="email-input"
-				id="email_input"
-			/>
-			<button class="subscribe-button" id="subscribe_button">
-				Subscribe to monthly newsletter
-			</button>
 		</div>
 		<!-- Sign-up form end -->
 
 		<!-- Success message start -->
 		<div class="success-container" id="success_div">
 			<img src="./resources/images/icon-success.svg" alt="" srcset="" class="success-image" />
-			<h1 class="heading-text">Thanks for subscribing!</h1>
+			<h1 class="success-heading">Thanks for subscribing!</h1>
 
 			<p class="success-text">
 				A confirmation email has been sent to
-				<span class="subscribed-email-span" id="subscribed_email_span"></span> Please open it
-				and click the button inside to confirm your subscription.
+				<span class="subscribed-email-span" id="subscribed_email_span"
+					>ash@loremcompany.com</span
+				>
+				Please open it and click the button inside to confirm your subscription.
 			</p>
 
-			<button type="button" class="success-button" id="success_button">Dismiss message</button>
+			<button class="success-button" id="success_button">Dismiss message</button>
 		</div>
 		<!-- Success message end -->
 	</body>
