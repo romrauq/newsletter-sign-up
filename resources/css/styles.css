@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+	background-color: hsl(235, 18%, 26%);
+}
+
+/* Main contaier styles: */
+.main-container {
+}
+
+.heading-text {
+}
+
+.paragraph-text {
+}
+
+.list-row {
+}
+
+.list-icon {
+}
+
+.list-text {
+}
+
+.email-label {
+}
+
+.email-input {
+}
+
+.subscribe-button {
+}
+
+/* Success container styles: */
+.success-container {
+}
+
+.success-image {
+}
+
+.heading-text {
+}
+
+.success-text {
+}
+
+.subscribed-email-span {
+}
+
+.success-button {
+}
+
+@media (max-width: 475px) {
+	/* Main contaier styles: */
+	.main-container {
+	}
+
+	.heading-text {
+	}
+
+	.paragraph-text {
+	}
+
+	.list-row {
+	}
+
+	.list-icon {
+	}
+
+	.list-text {
+	}
+
+	.email-label {
+	}
+
+	.email-input {
+	}
+
+	.subscribe-button {
+	}
+
+	/* Success container styles: */
+	.success-container {
+	}
+
+	.success-image {
+	}
+
+	.heading-text {
+	}
+
+	.success-text {
+	}
+
+	.subscribed-email-span {
+	}
+
+	.success-button {
+	}
+}
