@@ -9,42 +9,50 @@
 	</head>
 	<body>
 		<!-- Sign-up form start -->
-		<div class="">
-			<h1 class="">Stay updated!</h1>
-			<p class="">Join 60,000+ product managers receiving monthly updates on:</p>
+		<div class="main-container" id="main_container">
+			<h1 class="heading-text">Stay updated!</h1>
+			<p class="paragraph-text">Join 60,000+ product managers receiving monthly updates on:</p>
 
-			<div>
-				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="" id="" />
-				<p class="">Product discovery and building what matters</p>
+			<div class="list-row">
+				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
+				<p class="list-text">Product discovery and building what matters</p>
 			</div>
 
-			<div>
-				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="" id="" />
-				<p class="">Measuring to ensure updates are a success</p>
+			<div class="list-row">
+				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
+				<p class="list-text">Measuring to ensure updates are a success</p>
 			</div>
 
-			<div>
-				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="" id="" />
-				<p class="">And much more!</p>
+			<div class="list-row">
+				<img src="./resources/images/icon-list.svg" alt="" srcset="" class="list-icon" />
+				<p class="list-text">And much more!</p>
 			</div>
 
-			<label for="email" class="">Email address</label>
-			<input type="email" name="email" id="" placeholder="email@company.com" class="" id="" />
-			<button class="" id="">Subscribe to monthly newsletter</button>
+			<label for="email" class="email-label">Email address</label>
+			<input
+				type="email"
+				name="email"
+				placeholder="email@company.com"
+				class="email-input"
+				id="email_input"
+			/>
+			<button class="subscribed-button" id="subscribe_button">
+				Subscribe to monthly newsletter
+			</button>
 		</div>
 		<!-- Sign-up form end -->
 
 		<!-- Success message start -->
-		<div class="" id="">
-			<img src="./resources/images/icon-success.svg" alt="" srcset="" class="" />
-			<h1>Thanks for subscribing!</h1>
+		<div class="" id="success-container">
+			<img src="./resources/images/icon-success.svg" alt="" srcset="" class="success-image" />
+			<h1 class="heading-text">Thanks for subscribing!</h1>
 
-			<p class="">
+			<p class="success-text">
 				A confirmation email has been sent to <span id="subscribed_email"></span> Please open it
 				and click the button inside to confirm your subscription.
 			</p>
 
-			<button type="button" class="" id="">Dismiss message</button>
+			<button type="button" class="success-button" id="success_button">Dismiss message</button>
 		</div>
 		<!-- Success message end -->
 	</body>
