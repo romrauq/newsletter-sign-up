@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 		<link rel="stylesheet" href="./resources/css/styles.css" />
-		<script src="./resources/js/scripts.js"></script>
+		<script src="./resources/js/scripts.js" defer></script>
 		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
 	</head>
 	<body>
@@ -32,7 +32,7 @@
 					<p class="list-text">And much more!</p>
 				</div>
 
-				<form class="form-div">
+				<form class="form-div" onsubmit="subscribeEmail(event)">
 					<div class="label-row">
 						<label for="email" class="email-label">Email address</label>
 						<p class="error-text" id="error_text">Valid email required</p>
@@ -40,16 +40,12 @@
 					<input
 						type="email"
 						name="email"
+						autocomplete="email"
 						placeholder="email@company.com"
 						class="email-input"
 						id="email_input"
 					/>
-					<button
-						class="subscribe-button"
-						id="subscribe_button"
-						type="submit"
-						onclick="subscribeEmail()"
-					>
+					<button class="subscribe-button" id="subscribe_button" type="submit">
 						Subscribe to monthly newsletter
 					</button>
 				</form>
@@ -60,6 +56,12 @@
 					alt=""
 					srcset=""
 					class="illustration-desktop"
+				/>
+				<img
+					src="./resources/images/illustration-sign-up-mobile.svg"
+					alt=""
+					srcset=""
+					class="illustration-mobile"
 				/>
 			</div>
 		</div>
@@ -72,13 +74,13 @@
 
 			<p class="success-text">
 				A confirmation email has been sent to
-				<span class="subscribed-email-span" id="subscribed_email_span"
-					>ash@loremcompany.com</span
-				>
+				<span class="subscribed-email-span" id="subscribed_email_span">ash@lorem.com</span>
 				Please open it and click the button inside to confirm your subscription.
 			</p>
 
-			<button class="success-button" id="success_button">Dismiss message</button>
+			<button class="success-button" id="success_button" onclick="dismissMessage()">
+				Dismiss message
+			</button>
 		</div>
 		<!-- Success message end -->
 	</body>
